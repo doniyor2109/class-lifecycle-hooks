@@ -1,11 +1,20 @@
-const useEffect = require('react').useEffect;
+const react = require('react');
+const useEffect = react.useEffect;
+const useRef = react.useRef;
 
 module.exports = {
   useComponentDidMount: function(callback) {
-  useEffect(callback, []);
+    useEffect(callback, []);
   },
   useComponentDidUpdate: function(callback) {
-    useEffect(callback);
+    const ref = useRef(false);
+    useEffect(function() {
+      if (!ref.current) {
+        ref.current = true;
+      } else {
+        callback();
+      }
+    });
   },
   useComponentWillUnmount: function (callback) {
     useEffect(function() {
