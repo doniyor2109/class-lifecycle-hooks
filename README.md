@@ -9,7 +9,11 @@ yarn add class-lifecycle-hooks
 ## Usage
 
 ```js
-import { useComponentDidMount, useComponentDidUpdate, useComponentWillUnmount } from 'class-lifecycle-hooks';
+import {
+  useComponentDidMount,
+  useComponentDidUpdate,
+  useComponentWillUnmount,
+} from 'class-lifecycle-hooks';
 
 function App() {
   useComponentDidMount(() => {
