@@ -2,6 +2,8 @@
 
 Class lifecycle lifecycle hooks
 
+## Installation
+
 ```bash
 yarn add class-lifecycle-hooks
 ```
