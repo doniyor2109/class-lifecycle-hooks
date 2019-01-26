@@ -8,5 +8,7 @@
   },
   "peerDependencies": {
     "react": "next"
-  }
+  },
+  "repository": "git@github.com:doniyor2109/class-lifecycle-hooks.git",
+  "author": "doniyor2109 <doniyor2109@gmail.com>"
 }
